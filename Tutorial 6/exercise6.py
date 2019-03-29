@@ -14,7 +14,7 @@ def BIC(X,Y,estimator, N, parameterCount):
     retVal = (-(1/2) * N * np.log(mse)
     - (parameterCount/2) * np.log(N) + 1*N)
     
-##  providing negative numbers: add + N
+##  preventing negative numbers: add + N
     print(np.around(retVal,4))
 
 
